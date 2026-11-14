@@ -49,7 +49,7 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full min-h-screen overflow-hidden bg-bg-primary pt-28 pb-10 md:pt-0 md:pb-0"
+      className="relative isolate w-full min-h-screen bg-bg-primary pt-28 pb-10 md:pt-0 md:pb-0"
     >
       {/* ============ DESKTOP / TABLET LAYOUT ============ */}
       <div className="hidden md:block relative w-full h-screen">
@@ -283,11 +283,11 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-0 left-1/2 z-30 w-[calc(100%+32px)] -translate-x-1/2 rotate-[-1.5deg] overflow-hidden bg-text-primary text-bg-primary md:w-[calc(100%+64px)]">
+      <div className="absolute bottom-0 left-1/2 z-[1000] w-[calc(100%+120px)] -translate-x-1/2 rotate-[-1.5deg] overflow-hidden bg-text-primary text-bg-primary">
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{ duration: 32, repeat: Infinity, ease: "linear" }}
-          className="flex w-max items-center py-4 will-change-transform md:py-5"
+          className="flex w-max items-center py-4 pl-4 will-change-transform md:py-5"
         >
           {[...marqueeItems, ...marqueeItems].map((item, index) => (
             <div key={`${item}-${index}`} className="flex items-center">
