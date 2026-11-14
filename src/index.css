@@ -1,6 +1,6 @@
-@import "tailwindcss";
-
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "@fontsource-variable/geist";
+@import "tailwindcss";
 
 @theme {
   --color-bg-primary: #F4F4F5;
@@ -10,18 +10,30 @@
   --color-accent-orange: #FF6B00;
   --color-accent-orange-hover: #E05E00;
   --color-border-subtle: #E4E4E7;
-
   --font-display: "Fraunces", serif;
   --font-sans: "Inter", sans-serif;
 }
 
-html, body {
-  background-color: var(--color-bg-primary);
-  color: var(--color-text-primary);
-  font-family: var(--font-sans);
-  overflow-x: hidden;
-}
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
 
-h1, h2, h3, .font-display {
-  font-family: var(--font-display);
+  html {
+    font-family: var(--font-sans);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+  }
 }
