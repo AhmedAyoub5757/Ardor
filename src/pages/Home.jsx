@@ -7,6 +7,7 @@ import ShopTheEdit from "../components/sections/ShopTheEdit";
 import FeaturedSpotlight from "../components/sections/FeaturedSpotlight";
 import PressMentions from "../components/sections/PressMentions";
 import InstagramWall from "../components/sections/InstagramWall";
+import Footer from "../components/sections/Footer";
 
 export default function Home() {
   const [cartCount, setCartCount] = useState(0);
@@ -22,6 +23,7 @@ export default function Home() {
       <FeaturedSpotlight />
       <PressMentions />
       <InstagramWall />
+      <Footer />
     </main>
   );
 }
