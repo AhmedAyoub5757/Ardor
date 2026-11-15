@@ -4,6 +4,7 @@ import Hero from "../components/sections/Hero";
 import CollectionStory from "../components/sections/CollectionStory";
 import BrandValues from "../components/sections/BrandValues";
 import ShopTheEdit from "../components/sections/ShopTheEdit";
+import FeaturedSpotlight from "../components/sections/FeaturedSpotlight";
 
 export default function Home() {
   const [cartCount, setCartCount] = useState(0);
@@ -19,6 +20,7 @@ export default function Home() {
       <CollectionStory />
       <BrandValues />
       <ShopTheEdit onAddToCart={handleAddToCart} />
+      <FeaturedSpotlight />
     </main>
   );
 }
