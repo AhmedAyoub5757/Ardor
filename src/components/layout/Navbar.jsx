@@ -5,12 +5,12 @@ const navLinks = ["Home", "Shop", "Collections", "About", "Contact"];
 const menuFeatures = [
   {
     label: "The Embers Edit",
-    image: "/story-embers.jpg",
+    image: "/story-embers.webp",
     href: "#collection",
   },
   {
     label: "New arrivals",
-    image: "/product-1-front.png",
+    image: "/product-1-front.webp",
     href: "#shop",
   },
 ];

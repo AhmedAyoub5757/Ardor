@@ -10,7 +10,7 @@ const products = [
     price: 328,
     category: "Outerwear",
     tag: "New",
-    images: ["/product-1-front.png", "/product-1-back.jpg"],
+    images: ["/product-1-front.webp", "/product-1-back.webp"],
   },
   {
     id: "p2",
@@ -18,7 +18,7 @@ const products = [
     price: 148,
     category: "Knitwear",
     tag: "New",
-    images: ["/product-2-front.png", "/product-2-back.jpg"],
+    images: ["/product-2-front.webp", "/product-2-back.webp"],
   },
   {
     id: "p3",
@@ -26,7 +26,7 @@ const products = [
     price: 196,
     category: "Denim",
     tag: null,
-    images: ["/product-3-front.png", "/product-3-back.jpg"],
+    images: ["/product-3-front.webp", "/product-3-back.webp"],
   },
   {
     id: "p4",
@@ -34,7 +34,7 @@ const products = [
     price: 284,
     category: "Footwear",
     tag: "Limited",
-    images: ["/product-4-front.png", "/product-4-back.jpg"],
+    images: ["/product-4-front.webp", "/product-4-back.webp"],
   },
 ];
 

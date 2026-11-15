@@ -7,28 +7,28 @@ const chapters = [
     title: "The Embers Edit",
     tag: "Outerwear",
     copy: "Structured coats and raw wool, built for the first cold front. Heavy where it matters, cut close everywhere else.",
-    image: "/story-embers.png",
+    image: "/story-embers.webp",
   },
   {
     id: "02",
     title: "Night Walk",
     tag: "After Dark",
     copy: "Low light, long shadows. Pieces designed to move through the city after the sun gives up.",
-    image: "/story-nightwalk.png",
+    image: "/story-nightwalk.webp",
   },
   {
     id: "03",
     title: "Raw Material",
     tag: "Texture Study",
     copy: "Unfinished edges, visible seams. A study in fabric left to speak for itself.",
-    image: "/story-rawmaterial.png",
+    image: "/story-rawmaterial.webp",
   },
   {
     id: "04",
     title: "Second Skin",
     tag: "Knitwear",
     copy: "Fitted, quiet, close to the body. The layer underneath everything else.",
-    image: "/story-secondskin.png",
+    image: "/story-secondskin.webp",
   },
 ];
 

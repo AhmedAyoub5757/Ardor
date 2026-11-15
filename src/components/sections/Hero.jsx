@@ -111,17 +111,15 @@ export default function Hero() {
 
         {/* Center model image */}
         <motion.div
-          initial={{ opacity: 0, y: 180, scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 2.2, delay: 0.1, ease: easeOut }}
           style={{ y: imageY }}
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 h-[78vh] lg:h-[85vh] w-[340px] lg:w-[420px]"
         >
           <img
-            src="/hero.png"
+            src="/hero.webp"
             alt="ARDOR Autumn Winter Collection"
             loading="eager"
             decoding="async"
+            fetchPriority="high"
             className="w-full h-full object-cover object-top"
           />
         </motion.div>
@@ -221,20 +219,18 @@ export default function Hero() {
           Made for <span className="italic">the bold</span>
         </motion.h1>
 
-        <motion.div
-          initial={{ opacity: 0, y: 80, scale: 1.03 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 1.8, delay: 0.25, ease: easeOut }}
+        <div
           className="mt-6 w-full max-w-[280px] aspect-[3/4] rounded-sm overflow-hidden"
         >
           <img
-            src="/hero.png"
+            src="/hero.webp"
             alt="ARDOR Autumn Winter Collection"
             loading="eager"
             decoding="async"
+            fetchPriority="high"
             className="w-full h-full object-cover"
           />
-        </motion.div>
+        </div>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

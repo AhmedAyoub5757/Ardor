@@ -11,7 +11,7 @@ const mentions = [
     country: "GB",
     lat: 51.51,
     lng: -0.13,
-    image: "/press-1.jpg",
+    image: "/press-1.webp",
   },
   {
     id: "paris",
@@ -23,7 +23,7 @@ const mentions = [
     country: "FR",
     lat: 48.8566,
     lng: 2.3522,
-    image: "/press-2.jpg",
+    image: "/press-2.webp",
   },
   {
     id: "milan",
@@ -35,7 +35,7 @@ const mentions = [
     country: "IT",
     lat: 45.4642,
     lng: 9.19,
-    image: "/press-3.jpg",
+    image: "/press-3.webp",
   },
   {
     id: "new-york",
@@ -47,7 +47,7 @@ const mentions = [
     country: "US",
     lat: 40.7128,
     lng: -74.006,
-    image: "/press-4.jpg",
+    image: "/press-4.webp",
   },
   {
     id: "tokyo",
@@ -59,7 +59,7 @@ const mentions = [
     country: "JP",
     lat: 35.6762,
     lng: 139.6503,
-    image: "/press-5.jpg",
+    image: "/press-5.webp",
   },
   {
     id: "seoul",
@@ -71,7 +71,7 @@ const mentions = [
     country: "KR",
     lat: 37.5665,
     lng: 126.978,
-    image: "/press-6.jpg",
+    image: "/press-6.webp",
   },
   {
     id: "sydney",
@@ -83,7 +83,7 @@ const mentions = [
     country: "AU",
     lat: -33.8688,
     lng: 151.2093,
-    image: "/press-7.jpg",
+    image: "/press-7.webp",
   },
   {
     id: "sao-paulo",
@@ -95,7 +95,7 @@ const mentions = [
     country: "BR",
     lat: -23.5505,
     lng: -46.6333,
-    image: "/press-8.png",
+    image: "/press-8.webp",
   },
 ];
 

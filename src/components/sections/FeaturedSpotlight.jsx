@@ -33,7 +33,7 @@ export default function FeaturedSpotlight() {
             className="absolute left-0 md:left-[8%] top-0 md:top-[8%] w-[70%] md:w-[62%] h-[85%] md:h-[78%] overflow-hidden"
           >
             <img
-              src="/spotlight-1.png"
+              src="/spotlight-1.webp"
               alt="ARDOR seasonal campaign portrait in warm evening light"
               loading="lazy"
               decoding="async"
@@ -51,7 +51,7 @@ export default function FeaturedSpotlight() {
             className="absolute right-0 md:right-[2%] bottom-0 md:bottom-[6%] w-[58%] md:w-[48%] h-[55%] md:h-[52%] overflow-hidden z-10 ring-8 ring-bg-primary"
           >
             <img
-              src="/spotlight-2.png"
+              src="/spotlight-2.webp"
               alt="Close detail from the ARDOR Embers Edit campaign"
               loading="lazy"
               decoding="async"
@@ -69,7 +69,7 @@ export default function FeaturedSpotlight() {
             className="hidden md:block absolute right-[14%] top-0 w-[26%] h-[30%] overflow-hidden z-20 ring-8 ring-bg-primary"
           >
             <img
-              src="/spotlight-3.png"
+              src="/spotlight-3.webp"
               alt="Textural fabric detail from the ARDOR seasonal campaign"
               loading="lazy"
               decoding="async"

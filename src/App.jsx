@@ -1,6 +1,4 @@
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { Route, Routes } from "react-router-dom";
 import { initLenis } from "./lib/lenis";
 import Preloader from "./components/Preloader";
@@ -11,13 +9,6 @@ import NotFound from "./pages/NotFound";
 function App() {
   useEffect(() => {
     const lenis = initLenis();
-
-    AOS.init({
-      duration: 900,
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 80,
-    });
 
     return () => {
       lenis.destroy();
