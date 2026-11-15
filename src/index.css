@@ -1,18 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700&display=swap");
 @import "@fontsource-variable/geist";
 @import "tailwindcss";
 
 @theme {
-  --color-bg-primary: #F4F4F5;
-  --color-bg-surface: #FFFFFF;
-  --color-text-primary: #18181B;
-  --color-text-secondary: #71717A;
-  --color-accent-orange: #FF6B00;
-  --color-accent-orange-hover: #E05E00;
-  --color-border-subtle: #E4E4E7;
+  --color-bg-primary: #f4f4f5;
+  --color-bg-surface: #ffffff;
+  --color-text-primary: #18181b;
+  --color-text-secondary: #71717a;
+  --color-accent-orange: #ff6b00;
+  --color-accent-orange-hover: #e05e00;
+  --color-border-subtle: #e4e4e7;
   --font-display: "Fraunces", serif;
   --font-sans: "Inter", sans-serif;
   --font-heading: "Geist Variable", sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-ring: var(--ring);
 }
 
 @layer base {
@@ -37,4 +47,20 @@
   .font-display {
     font-family: var(--font-display);
   }
+}
+
+:root {
+  /* existing ARDOR theme vars stay as they are */
+
+  /* aliases so the PressGlobe component maps to your theme */
+  --background: var(--bg-primary);
+  --foreground: var(--text-primary);
+  --muted: var(--border-subtle);
+  --muted-foreground: var(--text-secondary);
+  --border: var(--border-subtle);
+  --card: var(--bg-surface);
+  --card-foreground: var(--text-primary);
+  --primary: var(--accent-orange);
+  --primary-foreground: #FFFFFF;
+  --ring: var(--accent-orange);
 }

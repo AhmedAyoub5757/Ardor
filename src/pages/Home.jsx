@@ -5,13 +5,11 @@ import CollectionStory from "../components/sections/CollectionStory";
 import BrandValues from "../components/sections/BrandValues";
 import ShopTheEdit from "../components/sections/ShopTheEdit";
 import FeaturedSpotlight from "../components/sections/FeaturedSpotlight";
+import PressMentions from "../components/sections/PressMentions";
 
 export default function Home() {
   const [cartCount, setCartCount] = useState(0);
-
-  const handleAddToCart = () => {
-    setCartCount((c) => c + 1);
-  };
+  const handleAddToCart = () => setCartCount((c) => c + 1);
 
   return (
     <main className="relative w-full bg-bg-primary">
@@ -21,6 +19,7 @@ export default function Home() {
       <BrandValues />
       <ShopTheEdit onAddToCart={handleAddToCart} />
       <FeaturedSpotlight />
+      <PressMentions />
     </main>
   );
 }
