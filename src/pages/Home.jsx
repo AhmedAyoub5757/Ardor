@@ -1,7 +1,7 @@
 import Navbar from "../components/layout/Navbar";
 import Hero from "../components/sections/Hero";
 import CollectionStory from "../components/sections/CollectionStory";
-import Manifesto from "../components/sections/Manifesto";
+import BrandValues from "../components/sections/BrandValues";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar cartCount={2} />
       <Hero />
       <CollectionStory />
-      <Manifesto />
+      <BrandValues />
     </main>
   );
 }
