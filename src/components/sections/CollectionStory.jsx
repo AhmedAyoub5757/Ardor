@@ -173,7 +173,9 @@ function Panel({ chapter, index, total, scrollYProgress }) {
       >
         <img
           src={chapter.image}
-          alt={chapter.title}
+          alt={`${chapter.title} ${chapter.tag.toLowerCase()} campaign`}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover"
         />
       </motion.div>

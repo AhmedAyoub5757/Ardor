@@ -120,6 +120,8 @@ export default function Hero() {
           <img
             src="/hero.png"
             alt="ARDOR Autumn Winter Collection"
+            loading="eager"
+            decoding="async"
             className="w-full h-full object-cover object-top"
           />
         </motion.div>
@@ -228,6 +230,8 @@ export default function Hero() {
           <img
             src="/hero.png"
             alt="ARDOR Autumn Winter Collection"
+            loading="eager"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </motion.div>

@@ -98,14 +98,18 @@ function ProductCard({ product, index, onAddToCart }) {
       >
         <motion.img
           src={product.images[0]}
-          alt={product.name}
+          alt={`${product.name}, ${product.category}`}
+          loading="lazy"
+          decoding="async"
           animate={{ opacity: hovered ? 0 : 1, scale: hovered ? 1.04 : 1 }}
           transition={{ duration: 0.5, ease: easeOut }}
           className="absolute inset-0 w-full h-full object-cover"
         />
         <motion.img
           src={product.images[1]}
-          alt=""
+          alt={`${product.name}, back view`}
+          loading="lazy"
+          decoding="async"
           animate={{ opacity: hovered ? 1 : 0, scale: hovered ? 1 : 1.04 }}
           transition={{ duration: 0.5, ease: easeOut }}
           className="absolute inset-0 w-full h-full object-cover"

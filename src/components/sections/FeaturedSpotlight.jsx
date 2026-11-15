@@ -34,7 +34,9 @@ export default function FeaturedSpotlight() {
           >
             <img
               src="/spotlight-1.png"
-              alt=""
+              alt="ARDOR seasonal campaign portrait in warm evening light"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -50,7 +52,9 @@ export default function FeaturedSpotlight() {
           >
             <img
               src="/spotlight-2.png"
-              alt=""
+              alt="Close detail from the ARDOR Embers Edit campaign"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -66,7 +70,9 @@ export default function FeaturedSpotlight() {
           >
             <img
               src="/spotlight-3.png"
-              alt=""
+              alt="Textural fabric detail from the ARDOR seasonal campaign"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -82,7 +88,7 @@ export default function FeaturedSpotlight() {
               transition={{ duration: 0.7, ease: easeOut }}
               className="text-xs tracking-[0.2em] uppercase text-text-secondary mb-4"
             >
-              05 — Seasonal Campaign
+              06 — Seasonal Campaign
             </motion.p>
 
             <motion.h2

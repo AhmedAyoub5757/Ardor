@@ -4,6 +4,7 @@ import Hero from "../components/sections/Hero";
 import CollectionStory from "../components/sections/CollectionStory";
 import BrandValues from "../components/sections/BrandValues";
 import ShopTheEdit from "../components/sections/ShopTheEdit";
+import SizeGuide from "../components/sections/SizeGuide";
 import FeaturedSpotlight from "../components/sections/FeaturedSpotlight";
 import PressMentions from "../components/sections/PressMentions";
 import InstagramWall from "../components/sections/InstagramWall";
@@ -20,6 +21,7 @@ export default function Home() {
       <CollectionStory />
       <BrandValues />
       <ShopTheEdit onAddToCart={handleAddToCart} />
+      <SizeGuide />
       <FeaturedSpotlight />
       <PressMentions />
       <InstagramWall />

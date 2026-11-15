@@ -103,7 +103,7 @@ export default function PressMentions() {
   return (
     <PressGlobe
       items={mentions}
-      eyebrow="06 — In The Press"
+      eyebrow="07 — In The Press"
       heading="Noticed before we introduced ourselves."
       caption="ARDOR hasn't run a single ad yet. This is what editors are saying anyway."
       autoplay

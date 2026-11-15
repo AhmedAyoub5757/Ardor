@@ -103,7 +103,9 @@ function PostCard({ post, index }) {
         <div className="relative w-full h-full overflow-hidden">
           <img
             src={post.image}
-            alt={post.model}
+            alt={`${post.model} wearing ARDOR`}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover"
           />
 
@@ -159,7 +161,7 @@ export default function InstagramWall() {
       >
         <div>
           <p className="text-xs tracking-[0.2em] uppercase text-text-secondary mb-3">
-            07 — Worn by You
+            08 — Worn by You
           </p>
           <h2 className="font-display text-[36px] sm:text-[48px] md:text-[60px] leading-[0.95] text-text-primary">
             Tagged in <em className="italic">the wild.</em>
