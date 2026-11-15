@@ -6,6 +6,7 @@ import BrandValues from "../components/sections/BrandValues";
 import ShopTheEdit from "../components/sections/ShopTheEdit";
 import FeaturedSpotlight from "../components/sections/FeaturedSpotlight";
 import PressMentions from "../components/sections/PressMentions";
+import InstagramWall from "../components/sections/InstagramWall";
 
 export default function Home() {
   const [cartCount, setCartCount] = useState(0);
@@ -20,6 +21,7 @@ export default function Home() {
       <ShopTheEdit onAddToCart={handleAddToCart} />
       <FeaturedSpotlight />
       <PressMentions />
+      <InstagramWall />
     </main>
   );
 }
