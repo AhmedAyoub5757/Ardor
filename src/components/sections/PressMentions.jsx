@@ -11,32 +11,30 @@ const mentions = [
     country: "GB",
     lat: 51.51,
     lng: -0.13,
-    pinLat: 57,
-    pinLng: -12,
     image: "/press-1.jpg",
   },
   {
-    id: "cape-town",
+    id: "paris",
     quote: "A rare new label that treats construction as seriously as concept.",
-    name: "Maya Jacobs",
+    name: "Noé Lefebvre",
     role: "Senior Critic",
-    company: "The Edit South",
-    city: "Cape Town",
-    country: "ZA",
-    lat: -33.9249,
-    lng: 18.4241,
+    company: "Maison Courant",
+    city: "Paris",
+    country: "FR",
+    lat: 48.8566,
+    lng: 2.3522,
     image: "/press-2.jpg",
   },
   {
-    id: "mexico-city",
+    id: "milan",
     quote: "Every piece reads like it was made to be worn for a decade, not a season.",
-    name: "Sofía Reyes",
+    name: "Giulia Conti",
     role: "Fashion Director",
-    company: "Forma",
-    city: "Mexico City",
-    country: "MX",
-    lat: 19.4326,
-    lng: -99.1332,
+    company: "Rivista Nera",
+    city: "Milan",
+    country: "IT",
+    lat: 45.4642,
+    lng: 9.19,
     image: "/press-3.jpg",
   },
   {
@@ -61,20 +59,18 @@ const mentions = [
     country: "JP",
     lat: 35.6762,
     lng: 139.6503,
-    pinLat: 30,
-    pinLng: 151,
     image: "/press-5.jpg",
   },
   {
-    id: "karachi",
+    id: "seoul",
     quote: "Structured, warm, and refreshingly unbothered by trend cycles.",
-    name: "Ayesha Khan",
+    name: "Hana Baek",
     role: "Senior Editor",
-    company: "The Indus Review",
-    city: "Karachi",
-    country: "PK",
-    lat: 24.8607,
-    lng: 67.0011,
+    company: "Studio Seoul",
+    city: "Seoul",
+    country: "KR",
+    lat: 37.5665,
+    lng: 126.978,
     image: "/press-6.jpg",
   },
   {
@@ -107,7 +103,7 @@ export default function PressMentions() {
   return (
     <PressGlobe
       items={mentions}
-      eyebrow="07 — In The Press"
+      eyebrow="06 — In The Press"
       heading="Noticed before we introduced ourselves."
       caption="ARDOR hasn't run a single ad yet. This is what editors are saying anyway."
       autoplay

@@ -515,7 +515,7 @@ export function PressGlobe({
       s.front = -1;
       s.depths.length = items.length;
     }
-    s.vectors = items.map((item) => toCartesian(item.pinLat ?? item.lat, item.pinLng ?? item.lng));
+    s.vectors = items.map((item) => toCartesian(item.lat, item.lng));
     s.longitudes = items.map((item) => item.lng);
     if (!s.started && diameter > 0) {
       s.started = true;
@@ -1032,7 +1032,7 @@ export function PressGlobe({
       />
       <div
         ref={stageRef}
-        className={cx("relative mx-auto w-full", wide ? "grid items-center gap-y-6 py-16" : "flex flex-col items-center gap-4 py-10")}
+        className={cx("relative mx-auto w-full", wide ? "grid items-center gap-y-6 py-10" : "flex flex-col items-center gap-4 py-5")}
         style={{
           maxWidth: MAX_CONTENT,
           paddingInline: pad,

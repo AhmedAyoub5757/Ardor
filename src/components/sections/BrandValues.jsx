@@ -155,7 +155,7 @@ const values = [
 
 export default function BrandValues() {
   return (
-    <section className="relative w-full bg-bg-primary py-24 md:py-36">
+    <section className="relative w-full bg-bg-primary pb-16 pt-24 md:pb-24 md:pt-36">
       {/* Section heading */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -165,7 +165,7 @@ export default function BrandValues() {
         className="px-6 md:px-16 mb-16 md:mb-20"
       >
         <p className="text-xs tracking-[0.2em] uppercase text-text-secondary mb-3">
-          04 — What We Stand For
+          03 — What We Stand For
         </p>
         <h2 className="font-display text-[36px] sm:text-[48px] md:text-[60px] leading-[0.95] text-text-primary max-w-[600px]">
           Made with <em className="italic">intent</em>, not convenience.

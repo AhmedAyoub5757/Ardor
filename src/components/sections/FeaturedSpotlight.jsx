@@ -18,7 +18,7 @@ export default function FeaturedSpotlight() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-bg-primary py-24 md:py-0 overflow-hidden"
+      className="relative w-full bg-bg-primary pb-16 pt-24 md:pb-24 md:pt-0 overflow-hidden"
     >
       <div className="flex flex-col md:flex-row md:min-h-screen">
         {/* ============ LEFT: image collage ============ */}
@@ -82,7 +82,7 @@ export default function FeaturedSpotlight() {
               transition={{ duration: 0.7, ease: easeOut }}
               className="text-xs tracking-[0.2em] uppercase text-text-secondary mb-4"
             >
-              06 — Seasonal Campaign
+              05 — Seasonal Campaign
             </motion.p>
 
             <motion.h2

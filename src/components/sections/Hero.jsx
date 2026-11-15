@@ -102,8 +102,10 @@ export default function Hero() {
           style={{ x: rightTextX }}
           className="absolute left-[calc(50%+180px)] top-[42%] z-0 md:left-[calc(50%+180px)] lg:left-[calc(50%+220px)]"
         >
-          <h1 className="font-heading whitespace-nowrap text-[38px] font-light italic leading-[0.9] tracking-[-0.07em] text-text-primary md:text-[48px] lg:text-[80px] xl:text-[96px]">
-            the bold
+          <h1 className="font-heading text-[38px] font-light italic leading-[0.9] tracking-[-0.07em] text-text-primary md:text-[48px] lg:text-[80px] xl:text-[96px]">
+            the
+            <br />
+            bold
           </h1>
         </motion.div>
 
@@ -203,7 +205,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="absolute left-6 top-28 text-left text-[11px] tracking-[0.2em] uppercase text-accent-orange"
+          className="absolute left-6 top-28 hidden text-left text-[11px] tracking-[0.2em] uppercase text-accent-orange"
         >
           Essential Layers
         </motion.p>
@@ -283,7 +285,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-0 left-1/2 z-[1000] w-[calc(100%+120px)] -translate-x-1/2 rotate-[-1.5deg] overflow-hidden bg-text-primary text-bg-primary">
+      <div className="absolute bottom-0 left-1/2 z-[9999] w-[calc(100%+120px)] -translate-x-1/2 overflow-hidden bg-text-primary text-bg-primary">
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{ duration: 32, repeat: Infinity, ease: "linear" }}

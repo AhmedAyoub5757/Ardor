@@ -7,28 +7,28 @@ const chapters = [
     title: "The Embers Edit",
     tag: "Outerwear",
     copy: "Structured coats and raw wool, built for the first cold front. Heavy where it matters, cut close everywhere else.",
-    image: "/story-embers.jpg",
+    image: "/story-embers.png",
   },
   {
     id: "02",
     title: "Night Walk",
     tag: "After Dark",
     copy: "Low light, long shadows. Pieces designed to move through the city after the sun gives up.",
-    image: "/story-nightwalk.jpg",
+    image: "/story-nightwalk.png",
   },
   {
     id: "03",
     title: "Raw Material",
     tag: "Texture Study",
     copy: "Unfinished edges, visible seams. A study in fabric left to speak for itself.",
-    image: "/story-rawmaterial.jpg",
+    image: "/story-rawmaterial.png",
   },
   {
     id: "04",
     title: "Second Skin",
     tag: "Knitwear",
     copy: "Fitted, quiet, close to the body. The layer underneath everything else.",
-    image: "/story-secondskin.jpg",
+    image: "/story-secondskin.png",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function CollectionStory() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <p className="mb-3 text-xs tracking-[0.2em] uppercase text-text-secondary">
-            03 — The Collection
+            02 — The Collection
           </p>
           <h2 className="font-display text-[40px] leading-[0.95] text-text-primary md:text-[64px]">
             Four stories, <em className="italic">one thread.</em>
@@ -165,7 +165,7 @@ function Panel({ chapter, index, total, scrollYProgress }) {
   );
 
   return (
-    <div className="relative w-screen h-full flex-shrink-0 overflow-hidden">
+    <div className="relative w-full h-full flex-shrink-0 overflow-hidden">
       {/* Full-bleed image with parallax */}
       <motion.div
         style={{ scale: imageScale, x: imageX }}

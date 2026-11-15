@@ -173,7 +173,7 @@ function ProductCard({ product, index, onAddToCart }) {
 /* ---------------- Section ---------------- */
 export default function ShopTheEdit({ onAddToCart }) {
   return (
-    <section className="relative w-full bg-bg-primary py-24 md:py-36">
+    <section className="relative w-full bg-bg-primary pb-24 pt-16 md:pb-36 md:pt-24">
       {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -184,7 +184,7 @@ export default function ShopTheEdit({ onAddToCart }) {
       >
         <div>
           <p className="text-xs tracking-[0.2em] uppercase text-text-secondary mb-3">
-            05 — New Arrivals
+            04 — New Arrivals
           </p>
           <h2 className="font-display text-[36px] sm:text-[48px] md:text-[60px] leading-[0.95] text-text-primary">
             Shop the <em className="italic">edit.</em>

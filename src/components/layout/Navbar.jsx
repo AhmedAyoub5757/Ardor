@@ -2,6 +2,18 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = ["Home", "Shop", "Collections", "About", "Contact"];
+const menuFeatures = [
+  {
+    label: "The Embers Edit",
+    image: "/story-embers.jpg",
+    href: "#collection",
+  },
+  {
+    label: "New arrivals",
+    image: "/product-1-front.png",
+    href: "#shop",
+  },
+];
 
 /* ---------------- Hamburger Icon ---------------- */
 function HamburgerIcon({ open }) {
@@ -87,6 +99,10 @@ export default function Navbar({ cartCount = 0 }) {
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [menuOpen]);
 
   return (
@@ -102,6 +118,7 @@ export default function Navbar({ cartCount = 0 }) {
           <motion.button
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Menu"
+            aria-expanded={menuOpen}
             className="flex items-center justify-center w-10 h-10 z-10"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -137,35 +154,69 @@ export default function Navbar({ cartCount = 0 }) {
             animate={{ clipPath: "inset(0 0 0% 0)" }}
             exit={{ clipPath: "inset(0 0 100% 0)" }}
             transition={{ duration: 0.6, ease: [0.76, 0, 0.24, 1] }}
-            className="fixed inset-0 z-40 bg-bg-primary flex flex-col items-start justify-center px-8 md:px-16"
+            className="fixed inset-0 z-40 h-dvh overflow-hidden bg-bg-primary px-6 pb-6 pt-28 sm:px-8 md:px-12 md:pb-10 md:pt-32"
           >
-            <nav className="flex flex-col gap-3 md:gap-4">
-              {navLinks.map((link, i) => (
-                <motion.a
-                  key={link}
-                  href="#"
-                  onClick={() => setMenuOpen(false)}
-                  initial={{ y: 40, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: 40, opacity: 0 }}
-                  transition={{
-                    duration: 0.5,
-                    delay: 0.15 + i * 0.07,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                  className="font-display italic text-4xl sm:text-5xl md:text-6xl text-text-primary hover:text-accent-orange transition-colors duration-300"
-                >
-                  {link}
-                </motion.a>
-              ))}
-            </nav>
+            <div className="mx-auto grid h-full w-full max-w-7xl grid-cols-1 grid-rows-[1fr_minmax(140px,28vh)] gap-8 md:grid-cols-[minmax(220px,0.7fr)_minmax(0,1.3fr)] md:grid-rows-1 md:gap-12 lg:gap-20">
+              <nav className="flex min-h-0 flex-col justify-center gap-2 sm:gap-3">
+                <p className="mb-3 text-xs tracking-[0.2em] uppercase text-text-secondary">
+                  Explore ARDOR
+                </p>
+                {navLinks.map((link, i) => (
+                  <motion.a
+                    key={link}
+                    href={link === "Home" ? "/" : `#${link.toLowerCase()}`}
+                    onClick={() => setMenuOpen(false)}
+                    initial={{ y: 40, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: 40, opacity: 0 }}
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.15 + i * 0.07,
+                      ease: [0.16, 1, 0.3, 1],
+                    }}
+                    className="w-fit font-display text-[clamp(2rem,5vw,4.5rem)] italic leading-none text-text-primary transition-colors duration-300 hover:text-accent-orange"
+                  >
+                    {link}
+                  </motion.a>
+                ))}
+              </nav>
+
+              <div className="grid min-h-0 grid-cols-2 gap-3 sm:gap-5 md:h-full">
+                {menuFeatures.map((feature, i) => (
+                  <motion.a
+                    key={feature.label}
+                    href={feature.href}
+                    onClick={() => setMenuOpen(false)}
+                    initial={{ opacity: 0, y: 24 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 24 }}
+                    transition={{
+                      duration: 0.6,
+                      delay: 0.25 + i * 0.1,
+                      ease: [0.16, 1, 0.3, 1],
+                    }}
+                    className="group relative min-h-0 overflow-hidden bg-border-subtle"
+                  >
+                    <img
+                      src={feature.image}
+                      alt=""
+                      className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                    <span className="absolute bottom-4 left-4 right-4 font-display text-lg italic text-white sm:bottom-6 sm:left-6 sm:text-2xl">
+                      {feature.label}
+                    </span>
+                  </motion.a>
+                ))}
+              </div>
+            </div>
 
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              className="absolute bottom-8 left-8 md:left-16 text-text-secondary text-sm tracking-wide"
+              className="absolute bottom-6 left-6 hidden text-sm tracking-wide text-text-secondary sm:left-8 md:block md:left-12"
             >
               Wear the Fire
             </motion.p>

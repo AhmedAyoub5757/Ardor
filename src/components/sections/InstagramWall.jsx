@@ -159,7 +159,7 @@ export default function InstagramWall() {
       >
         <div>
           <p className="text-xs tracking-[0.2em] uppercase text-text-secondary mb-3">
-            08 — Worn by You
+            07 — Worn by You
           </p>
           <h2 className="font-display text-[36px] sm:text-[48px] md:text-[60px] leading-[0.95] text-text-primary">
             Tagged in <em className="italic">the wild.</em>
