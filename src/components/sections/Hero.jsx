@@ -285,7 +285,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-0 left-1/2 z-[9999] w-[calc(100%+120px)] -translate-x-1/2 overflow-hidden bg-text-primary text-bg-primary">
+      <div className="absolute inset-x-0 bottom-0 z-[9999] w-full overflow-hidden bg-text-primary text-bg-primary">
         <motion.div
           animate={{ x: ["0%", "-50%"] }}
           transition={{ duration: 32, repeat: Infinity, ease: "linear" }}
